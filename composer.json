@@ -32,11 +32,14 @@
         }
     ],
     "autoload": {
-        "classmap": [
-            "./"
-        ]
+        "psr-0": {
+            "HTML": "./"
+        }
     },
     "description": "More info available on: http://pear.php.net/package/HTML_QuickForm",
+    "include-path": [
+        "./"
+    ],
     "license": "PHP License",
     "name": "pear/html_quickform",
     "support": {

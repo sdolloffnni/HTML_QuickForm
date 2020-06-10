@@ -57,7 +57,7 @@ class HTML_QuickForm_html extends HTML_QuickForm_static
     }
     function HTML_QuickForm_html($text = null)
     {
-        HTML_QuickForm_html::_construct($text);
+        HTML_QuickForm_html::__construct($text);
     }
     // }}}
     // {{{ accept()

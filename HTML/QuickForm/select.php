@@ -85,6 +85,11 @@ class HTML_QuickForm_select extends HTML_QuickForm_element {
         }
     } //end constructor
     
+    function HTML_QuickForm_select($elementName=null, $elementLabel=null, $options=null, $attributes=null)
+    {
+        HTML_QuickForm_select::__construct($elementName, $elementLabel, $options, $attributes);
+    }
+    
     // }}}
     // {{{ apiVersion()
 

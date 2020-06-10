@@ -59,13 +59,17 @@ class HTML_QuickForm_Renderer_QuickHtml extends HTML_QuickForm_Renderer_Default 
      * @access public
      * @return void
      */
-    function HTML_QuickForm_Renderer_QuickHtml()
+    function __construct()
     {
         $this->HTML_QuickForm_Renderer_Default();
         // The default templates aren't used for this renderer
         $this->clearAllTemplates();
     } // end constructor
 
+    function HTML_QuickForm_Renderer_QuickHtml()
+    {
+        HTML_QuickForm_Renderer_QuickHtml::__construct();
+    }
     // }}}
     // {{{ toHtml()
 

@@ -76,6 +76,11 @@ class HTML_QuickForm_checkbox extends HTML_QuickForm_input
         $this->_generateId();
     } //end constructor
     
+    function HTML_QuickForm_checkbox($elementName=null, $elementLabel=null, $text='', $attributes=null)
+    {
+        HTML_QuickForm_checkbox::__construct($elementName, $elementLabel, $text, $attributes);
+
+    }
     // }}}
     // {{{ setChecked()
 
